@@ -4,9 +4,6 @@ body {
     height: 100vh;
     background: #63c0e1;
     background: linear-gradient(-150deg, #4ad8c3, #83a2f1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 	.form-bg{
 		padding: 2em 0;
@@ -38,13 +35,11 @@ body {
 		position: relative;
 	}
 	.form-horizontal .form-control{
-		background: #f0f0f0;
-		border: none;
 		border-radius: 5px;
 		box-shadow: none;
 		padding: 0 20px 0 45px;
 		height: 40px;
-		font-size: 18px;
+		font-size: 1.5rem;
 		transition: all 0.3s ease 0s;
 	}
 	.form-horizontal .form-control:focus{
@@ -56,7 +51,7 @@ body {
 		position: absolute;
 		top: 12px;
 		left: 50px;
-		font-size: 17px;
+		font-size: 18px;
 		color: #c8c8c8;
 		transition : all 0.5s ease 0s;
 	}
@@ -123,15 +118,21 @@ body {
 	}
 	.form-horizontal .btn{
 		float: right;
-		font-size: 16px;
+		padding: 0px 20px;
+		font-size: 1.5rem;
 		color: #fff;
 		background: #00b4ef;
 		border-radius: 5px;
-		padding: 10px 25px;
+		text-align:center;
 		border: none;
 		text-transform: capitalize;
 		transition: all 0.5s ease 0s;
 	}
+	
+	.error{
+        outline: 1px solid red;
+    }    
+	
 	@media only screen and (max-width: 479px){
 		.form-horizontal .form-group{
 			padding: 0 25px;
@@ -140,6 +141,6 @@ body {
 			left: 45px;
 		}
 		.form-horizontal .btn{
-			padding: 10px 20px;
+			padding: 0px 20px;
 		}
 	}
