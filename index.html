@@ -206,11 +206,6 @@ function send() {
   let emplyid = document.querySelector('#emplyid').value;
   let location =  $('#location').val(); //獲取選中記錄的value值
   let locationNM = $('#location option:selected').text(); //獲取選中記錄的text值
-  
- 
-
-  
-  alert(location);
 
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbyXVsjvgqMkHGRUKmzw7xq7VkAAaWT3DXQ45vpbAyUcKi_WM18/exec",
