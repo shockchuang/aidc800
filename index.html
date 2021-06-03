@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="favicon.ico">
-<title>航電廠防疫實名制</title>
+<title>航電大樓防疫實名制</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/zzsc.css">
@@ -19,22 +19,22 @@
 			<div class="col-md-offset-3 col-md-6">
 				<div class="form-horizontal" style="padding:40px 20px 40px 20px;">
 				<img src="./images/aidc.png" style="width:25%;margin:5px;">
-					<span class="heading">航電廠防疫實名制</span>
+					<span class="heading">航電大樓防疫實名制</span>
 					<div class="form-group">
 						
 						<select name="YourLocation" class="form-control" id="location" placeholder="區域">
 						<option value="">--請選擇區域--</option>　
-						<option value="1A">航電廠1F-A區</option>
-						　<option value="1B">航電廠1F-B區</option>
+						<option value="1A">航電大樓1樓A區</option>
+						　<option value="1B">航電大樓1樓B區</option>
 						　<option value="132">132會議室</option>
-						　<option value="2A">航電廠2F-A區</option>
-						　<option value="2B">航電廠2F-B區</option>
+						　<option value="2A">航電大樓2樓A區</option>
+						　<option value="2B">航電大樓2樓B區</option>
 						　<option value="201">201會議室</option>
 						  <option value="216">216會議室</option>
-						  <option value="3A">航電廠3F-A區</option>
-						　<option value="3B">航電廠3F-B區</option>
-						<option value="4A">航電廠4F-A區</option>
-						　<option value="4B">航電廠4F-B區</option>
+						  <option value="3A">航電大樓3樓A區</option>
+						　<option value="3B">航電大樓3樓B區</option>
+						  <option value="4A">航電大樓4樓A區</option>
+						　<option value="4B">航電大樓4樓B區</option>
 						</select>
 						<i class="fa fa-map-marker"></i>
 					</div>
@@ -76,8 +76,8 @@ function send() {
    $("#loadingIMG").show();
    $('#emplyid').removeClass("error");
      $.ajax({
-    //url: "https://script.google.com/macros/s/AKfycby6Jaa3wrbIXET0CvzhZEURpIXYmbez0P1BNC_EJf3auRgYLkY/exec",
-	url:"https://script.google.com/macros/s/AKfycbyXVsjvgqMkHGRUKmzw7xq7VkAAaWT3DXQ45vpbAyUcKi_WM18/exec",
+    url: "https://script.google.com/macros/s/AKfycby6Jaa3wrbIXET0CvzhZEURpIXYmbez0P1BNC_EJf3auRgYLkY/exec",
+	//url:"https://script.google.com/macros/s/AKfycbyXVsjvgqMkHGRUKmzw7xq7VkAAaWT3DXQ45vpbAyUcKi_WM18/exec",
     data: {
         "emplyid": emplyid,
         "location": location,
