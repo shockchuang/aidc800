@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/zzsc.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
 <div class="demo form-bg">
@@ -53,6 +54,27 @@
 </div>
 <div id="loadingIMG" style="display:none;position: absolute; top: 50%; left: 50%; margin-top: -107.5px;margin-left: -112.5px;"><img src="./images/loader.gif"/></div>
 <script>
+var liffID = '1656048672-ke6yqpyq';
+var user ='';
+liff.init({
+  liffId: liffID
+}).then(function() {
+  console.log('LIFF init');
+  console.log(liff.getOS());
+  console.log(liff.getContext());
+  user = liff.getDecodedIDToken();
+  console.log(user);
+  liff.getProfile()
+    .then(function(profile) {
+      console.log(profile);
+    });
+	
+  // 這邊開始寫使用其他功能
+  
+}).catch(function(error) {
+  console.log(error);
+});
+document.getElementById('emplyid').value=user;
      var strUrl = location.search;
             var YourLocation;
             if (strUrl.indexOf("?") != -1) {
