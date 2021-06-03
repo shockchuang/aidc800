@@ -66,7 +66,11 @@ liff.init({
   console.log(user);
   liff.getProfile()
     .then(function(profile) {
-      document.getElementById('emplyid').value=profile;
+	const userId = profile.userId;
+    const name = profile.displayName;
+    const pictureUrl = profile.pictureUrl;
+    const statusMessage = profile.statusMessage;
+      document.getElementById('emplyid').value=name;
     });
 	
   // 這邊開始寫使用其他功能
